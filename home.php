@@ -21,9 +21,9 @@ if (!isset($_SESSION['user_id'])) {
         <h2 style="color: #444; margin-bottom: 20px;">Welcome to the Tigray Bus Ticket Booking System</h2>
         <p style="font-size: 16px; margin-bottom: 20px;">Select your preference:</p>
         <ul style="list-style-type: none; padding: 0; text-align: left; margin-bottom: 20px;">
-            <li style="margin: 10px 0;"><a href="booking.php" style="text-decoration: none; color: #007bff; font-size: 16px; font-weight: bold; transition: color 0.3s ease;">Book a Ticket</a></li>
-            <li style="margin: 10px 0;"><a href="view_booked.php" style="text-decoration: none; color: #007bff; font-size: 16px; font-weight: bold; transition: color 0.3s ease;">View Booked Tickets</a></li>
-            <li style="margin: 10px 0;"><a href="cancel_ticket.php" style="text-decoration: none; color: #007bff; font-size: 16px; font-weight: bold; transition: color 0.3s ease;">Cancel Ticket</a></li>
+            <li style="margin: 10px 0;"><a href="booking.php" style="text-decoration: none; color: #007bff; font-size: 16px; font-weight: bold; transition: color 0.3s ease;">1: Book a Ticket</a></li>
+            <li style="margin: 10px 0;"><a href="view_booked.php" style="text-decoration: none; color: #007bff; font-size: 16px; font-weight: bold; transition: color 0.3s ease;">2: View Booked Tickets</a></li>
+            <li style="margin: 10px 0;"><a href="cancel_ticket.php" style="text-decoration: none; color: #007bff; font-size: 16px; font-weight: bold; transition: color 0.3s ease;">3: Cancel Ticket</a></li>
         </ul>
     </div>
 
