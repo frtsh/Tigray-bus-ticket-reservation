@@ -14,13 +14,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $destination = trim($_POST['destination']);
     $date = $_POST['date']; // Format: YYYY-MM-DD
 
+    // Query buses by source, destination, and the user-selected date
     $sql = "SELECT * FROM buses 
             WHERE TRIM(source) = ? 
-            AND TRIM(destination) = ? 
-            AND DATE(departure_time) = ?";
+            AND TRIM(destination) = ?";
 
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sss", $source, $destination, $date);
+    $stmt->bind_param("ss", $source, $destination);
     $stmt->execute();
     $result = $stmt->get_result();
 
@@ -67,6 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <td>
                         <form action="seat_selection.php" method="GET">
                             <input type="hidden" name="bus_id" value="<?php echo $bus['id']; ?>">
+                            <input type="hidden" name="travel_date" value="<?php echo htmlspecialchars($date); ?>"> <!-- Pass the travel date -->
                             <button type="submit">Reserve</button>
                         </form>
                     </td>
