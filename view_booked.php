@@ -37,7 +37,7 @@ $result = $conn->query($sql);
                     <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['seat_number']; ?></td>
                     <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['departure_time']; ?></td>
                     <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['arrival_time']; ?></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['booking_date']; ?></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $array['booking_date'] ?? null; ?></td>
                 </tr>
             <?php endwhile; ?>
         </tbody>
