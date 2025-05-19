@@ -14,7 +14,7 @@ $sql = "SELECT tickets.*, buses.bus_name, buses.departure_time, buses.arrival_ti
         WHERE tickets.user_id = $user_id";
 $result = $conn->query($sql);
 ?>
-
+ <a href="home.php" style="display: inline-block; padding: 8px 16px; background-color:rgb(4, 49, 88); color: white; text-decoration: none; border-radius: 4px; font-size: 14px;">Back to Home</a>
 <h2 style="text-align: center; color: #333; font-size: 24px; margin-bottom: 20px;">Your Booked Tickets</h2>
 
 <?php if ($result->num_rows > 0): ?>
@@ -32,12 +32,12 @@ $result = $conn->query($sql);
         <tbody>
             <?php while ($row = $result->fetch_assoc()): ?>
                 <tr style="text-align: left; color: #333;">
-                    <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['id']; ?></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['ticket_id']; ?></td> <!-- Corrected this line -->
                     <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['bus_name']; ?></td>
                     <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['seat_number']; ?></td>
                     <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['departure_time']; ?></td>
                     <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['arrival_time']; ?></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['booking_date']; ?></td> <!-- Corrected line -->
+                    <td style="padding: 12px; border: 1px solid #ddd;"><?php echo $row['booking_time']; ?></td> <!-- Adjusted to booking_time -->
                 </tr>
             <?php endwhile; ?>
         </tbody>

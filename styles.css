@@ -1,19 +1,31 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('image.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f0f0f0; /* Soft off-white text */
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(10, 25, 47, 0.6); /* Deep navy blue overlay */
+    z-index: -1;
 }
 
 header {
-    background-color: #007bff;
+    background-color: rgba(255, 99, 71, 0.9); /* Tomato red with opacity */
     color: white;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(255, 99, 71, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -23,21 +35,21 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 30px;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #fff7f2; /* Very light peach */
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    color: #f0f0f0;
-    /* Optional: Add a hover effect */
+    color: #ff6347; /* Tomato red */
+    background-color: #f0e6e1; /* Light peach background on hover */
+    box-shadow: 0 2px 6px rgba(255, 99, 71, 0.4);
 }

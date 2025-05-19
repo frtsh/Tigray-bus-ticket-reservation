@@ -31,8 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <?php include('header.php'); ?>
+ <a href="home.php" style="display: inline-block; padding: 8px 16px; background-color:rgb(4, 49, 88); color: white; text-decoration: none; border-radius: 4px; font-size: 14px;">Back to Home</a>
 
-<h2 style="text-align: center; color: #333; font-size: 24px; margin-bottom: 20px;">Search Buses</h2>
+<h2 style="text-align: center; color: white; font-size: 24px; margin-bottom: 20px;">Search Buses</h2>
 
 <form method="POST" action="booking.php" style="max-width: 500px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <label for="source">Source:</label>
