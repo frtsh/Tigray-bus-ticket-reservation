@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <h2 style="text-align: center; color: white; font-size: 24px; margin-bottom: 20px;">Search Buses</h2>
 
-<form method="POST" action="booking.php" style="max-width: 500px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+<form method="POST" action="booking.php" style="max-width: 500px; margin: 0 auto; color : black;  background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <label for="source">Source:</label>
     <input type="text" id="source" name="source" required>
 
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p style="text-align:center; color:red;">No buses found for that route and date.</p>
     <?php else: ?>
         <h3 style="text-align: center;">Available Buses</h3>
-        <table border="1" cellpadding="10" cellspacing="0" style="max-width: 500px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <table border="1" cellpadding="10" cellspacing="0" style="max-width: 500px; margin: 0 auto; color : black; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
             <tr>
                 <th>Bus Name</th>
                 <th>Departure Time</th>

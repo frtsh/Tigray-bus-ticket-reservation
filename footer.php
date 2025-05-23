@@ -1,6 +1,6 @@
 <footer>
   <div class="footer-container">
-    <p>&copy; <?= date('Y'); ?> Group Two. All rights reserved.</p>
+    <p>&copy; <?= date('Y'); ?> Group Two. MIT Licence</p>
     <nav>
       <ul>
         <li><a href="about.php">About Us</a></li>

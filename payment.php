@@ -222,7 +222,8 @@ include('header.php');
                 </div>
                 
                 <div class="form-actions">
-                    <button type="submit" class="btn-pay">Complete Payment</button>
+                    <button type="button" class="btn-pay" onclick="window.location.href='view_booked.php'">Complete Payment</button>
+
                     <a href="seat_selection.php?bus_id=<?= htmlspecialchars($bus_id) ?>&travel_date=<?= htmlspecialchars($travel_date) ?>" 
                        class="btn-back">← Back</a>
                 </div>
@@ -236,6 +237,7 @@ include('header.php');
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
+    color:black;
 }
 
 .payment-container {
@@ -333,6 +335,8 @@ include('header.php');
 
 .btn-back:hover {
     background-color: #e2e6ea;
+     color:black;
+    
 }
 
 .alert {
@@ -342,10 +346,12 @@ include('header.php');
 }
 
 .alert-danger {
-    background-color: #f8d7da;
+    background-color: #fff;
     color: #721c24;
     border: 1px solid #f5c6cb;
+    
 }
+
 </style>
 
 <script>

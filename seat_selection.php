@@ -166,6 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 8px;
+    color:black;
 }
 
 .booking-form {
